@@ -4,5 +4,6 @@ RUN apt-get update -y && \
 
 COPY ./smb.conf /etc/samba/
 RUN mkdir /home/share
+RUN chmod 777 -R /home/share
 
-CMD service smbd start && bash
+CMD service smbd start && tail -f /dev/null
