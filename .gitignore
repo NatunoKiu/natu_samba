@@ -1,1 +1,4 @@
-smb.conf
+*
+!/Dockerfile
+!/.gitignore
+!/natu_samba.sh
